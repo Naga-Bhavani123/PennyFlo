@@ -1,0 +1,55 @@
+POST http://localhost:3000/register/ 
+Content-Type: application/json
+
+{"name": "Raju Mahima",
+"mobile": "9908139709", 
+"email": "mahima60@gmail.com", 
+"password": "mahima@1238", 
+"role": "seller" }
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json 
+
+{"email": "mahima60@gmail.com", 
+"password": "mahima@1238"}
+
+
+###
+
+POST http://localhost:3000/property/
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
+
+{"location": "hyderabad", 
+"cost": 1000000,
+"noOfRooms":1,
+"status":"available"
+}
+
+###
+
+GET http://localhost:3000/property/?location=hyderabad&min_cost=1000000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
+
+
+###
+GET http://localhost:3000/property/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
+
+
+###
+
+PUT http://localhost:3000/property/1/
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
+
+{"location": "vijayawada"}
+
+
+###
+
+DELETE http://localhost:3000/property/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
+

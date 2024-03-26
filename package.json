@@ -1,0 +1,20 @@
+{
+  "name": "Introduction-to-Node-JS",
+  "version": "1.0.0",
+  "description": "- Introduction to Node JS - Running JS Outside Browser   - Node REPL   - Node CLI - Common JS Modules   - Default Exports     - module.exports   - Named Exports     - exports   - Importing Modules     - requires() - Common JS Modules   - Default Exports     - module.exports   - Named Exports     - exports   - Importing Modules     - requires()",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
