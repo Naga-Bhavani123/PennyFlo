@@ -12,15 +12,15 @@ Content-Type: application/json
 POST http://localhost:3000/login/
 Content-Type: application/json 
 
-{"email": "mahima60@gmail.com", 
-"password": "mahima@1238"}
+{"email": "bhavani34@gmail.com", 
+"password": "bhavani@123"}
 
 
 ###
 
 POST http://localhost:3000/property/
 Content-Type: application/json 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJoYXZhbmkzNEBnbWFpbC5jb20iLCJpYXQiOjE3MTE1NDU1MTR9.sEqx8TF3DZ_YMGaCf0K9dackMwqcpz4zjazvB8ldd-8
 
 {"location": "hyderabad", 
 "cost": 1000000,
@@ -30,20 +30,22 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltY
 
 ###
 
-GET http://localhost:3000/property/?location=hyderabad&min_cost=1000000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
+GET http://localhost:3000/property/?location=hyderabad&min_cost=1000000&min_rooms=3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJoYXZhbmkzNEBnbWFpbC5jb20iLCJpYXQiOjE3MTE1NDU1MTR9.sEqx8TF3DZ_YMGaCf0K9dackMwqcpz4zjazvB8ldd-8
+
 
 
 ###
 GET http://localhost:3000/property/1/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJoYXZhbmkzNEBnbWFpbC5jb20iLCJpYXQiOjE3MTE1NDU1MTR9.sEqx8TF3DZ_YMGaCf0K9dackMwqcpz4zjazvB8ldd-8
+
 
 
 ###
 
 PUT http://localhost:3000/property/1/
 Content-Type: application/json 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJoYXZhbmkzNEBnbWFpbC5jb20iLCJpYXQiOjE3MTE1NDU1MTR9.sEqx8TF3DZ_YMGaCf0K9dackMwqcpz4zjazvB8ldd-8
 
 {"location": "vijayawada"}
 
@@ -51,5 +53,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltY
 ###
 
 DELETE http://localhost:3000/property/1/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haGltYTYwQGdtYWlsLmNvbSIsImlhdCI6MTcxMTQ3MjczM30.m-uzTQ36QX-hQLnQiIHe3JxpfL_0tAG0qmrVbiUva80
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJoYXZhbmkzNEBnbWFpbC5jb20iLCJpYXQiOjE3MTE1NDU1MTR9.sEqx8TF3DZ_YMGaCf0K9dackMwqcpz4zjazvB8ldd-8
