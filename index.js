@@ -131,9 +131,11 @@ app.post("/login/", async (request, response) => {
         const token = sign(payloads, "SECRETE_KEY"); //sign method takes 2 arguments payloads and secrete_key
         // payloads contains unique identity
         response.send({ token }); // passing access token for every subsequent request is enough because token as payloads object which contains users information
+        
+        
+      }else{
         response.status(400);
         response.send("Invalid password");
-      }
     }
   } catch (error) {
     console.log(error.message);
